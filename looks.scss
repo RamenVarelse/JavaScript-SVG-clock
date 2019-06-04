@@ -1,0 +1,40 @@
+/* 
+Stylesheet for thr RamenVarelse's JavaScript SVG clock
+
+SASS vars:	*/
+
+$mainBGcolor: #bbbb77;			/* Background colors */
+$clockDIVbgcolor: #D3D3A8;
+
+
+
+/* Stylesheet code: */
+
+html, body {
+	background-color: $mainBGcolor;
+}
+
+h1 {
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+
+#clock {	/* Main clock rectangular container with entire clock inside */
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 110px;
+	left: calc(50% - 201px);
+	border: solid black 2px;
+	background-color: $clockDIVbgcolor;
+}
+
+#SVGplain {
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+
+

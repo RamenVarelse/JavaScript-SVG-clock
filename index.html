@@ -1,0 +1,39 @@
+<!doctype HTML>
+<html lang="pl">
+	<head>
+		<title>RamenVarelse's JavaScript SVG clock</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="looks.css" />
+		<!--<script src="mecha.js"></script>-->
+	</head>
+	<body>
+		<h1>RamenVarelse's JavaScript SVG clock</h1>
+		<div id="clock" alt="penis">
+			<svg width="360" height="360">
+				<circle cx="200" cy="200" r="155" stroke="black" stroke-width="3" fill="white" /><!-- main big circle "cyferblat" -->
+				<circle cx="200" cy="200" r="140" stroke="black" stroke-width="1" fill="transparent" /><!--assist circle big -->
+				<circle cx="200" cy="200" r="8" stroke="black" stroke-width="2" fill="transparent" /><!--assist circle small -->
+				<circle cx="200" cy="200" r="2" stroke="black" stroke-width="4" /><!-- middle point -->
+				<line x1="197" y1="60" x2="197" y2="85" stroke="black" stroke-width="3" /><!-- 12 o'clock double lines 1 -->
+				<line x1="203" y1="60" x2="203" y2="85" stroke="black" stroke-width="3" /><!-- 12 o'clock double lines 2 -->
+				<line x1="265.006" y1="87.42" x2="270.006" y2="78.76" stroke="black" stroke-width="3" /> <!-- 1 o'clock -->
+				<line x1="312.583" y1="135" x2="321.244" y2="130" stroke="black" stroke-width="3" /> <!-- 2 o'clock -->
+				<line x1="340" y1="200" x2="315" y2="200" stroke="black" stroke-width="3" /><!-- 3 o'clock line -->
+				<line x1="312.583" y1="265" x2="321.244" y2="270" stroke="black" stroke-width="3" /> <!-- 4 o'clock -->
+				<line x1="265" y1="312.583" x2="270" y2="321.244" stroke="black" stroke-width="3" /> <!-- 5 o'clock -->
+				<line x1="200" y1="340" x2="200" y2="315" stroke="black" stroke-width="3" /><!-- 6 o'clock line -->
+				<line x1="135" y1="312.583" x2="130" y2="321.244" stroke="black" stroke-width="3" /> <!-- 7 o'clock -->
+				<line x1="87.417" y1="265" x2="78.756" y2="270" stroke="black" stroke-width="3" /> <!-- 8 o'clock -->
+				<line x1="60" y1="200" x2="85" y2="200" stroke="black" stroke-width="3" /><!-- 9 o'clock line -->
+				<line x1="87.417" y1="135" x2="78.756" y2="130" stroke="black" stroke-width="3" /> <!-- 10 o'clock -->
+				<line x1="135" y1="87.417" x2="130" y2="78.756" stroke="black" stroke-width="3" /> <!-- 11 o'clock -->
+
+				<!-- Clock's hands -->
+				<line x1="200" y1="192" x2="200" y2="125" stroke="black" stroke-width="7" id="hand_hour" /><!-- hour hand -->
+				<line id="hand_min" x1="200" y1="192" x2="200" y2="75" stroke="black" stroke-width="4" /><!-- minute hand -->
+				<line id="hand_sec" x1="200" y1="192" x2="200" y2="75" stroke="red" stroke-width="1" /><!-- second hand -->
+			</svg>
+		</div>
+		<script src="mecha.js"></script>
+	</body>
+</html>
